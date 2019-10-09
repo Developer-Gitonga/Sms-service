@@ -14,37 +14,37 @@ A messaging service that can be used to send messages to different service provi
     redis==3.3.8
     requests
     ```
-2; SetUp
 
-    Clone project `git clone https://github.com/pmutua/sms-service.git`
+## SetUp
 
-    Make sure  you have already installed (virtualenv)[https://pypi.org/project/virtualenv/]
+Clone project `git clone https://github.com/pmutua/sms-service.git`
 
-    `cd` into directory then  run:
+Make sure  you have already installed (virtualenv)[https://pypi.org/project/virtualenv/]
 
-    `virtualenv -p python3 env`
+`cd` into directory then  run:
 
-    `source env/bin/activate`
+`virtualenv -p python3 env`
 
-    `pip install -r requirements.txt`
+`source env/bin/activate`
 
-    Then run: `gunicorn app:app`
+`pip install -r requirements.txt`
 
-3; Making requests
+Then run: `gunicorn app:app`
 
-    Sending SMS
+### Making requests
 
-    **Example:**
+Sending SMS
 
-    **POST** `https://sms-serv.herokuapp.com/api/send_sms/`
+**Example:**
 
-    HEADERS   `Content-Typeapplication/json`
+**POST** `https://sms-serv.herokuapp.com/api/send_sms/`
 
-    BODY `raw`:
-        {
-            "msg":"Text containing message",
-            "phoneNumber":["+254722212132"]
-        }
+HEADERS   `Content-Typeapplication/json`
 
-    
-    The postman collection can be found [here](https://documenter.getpostman.com/view/8315062/SVtTz8wH?version=latest)
+BODY `raw`:
+    {
+        "msg":"Text containing message",
+        "phoneNumber":["+2547XXXXXX"]
+    }
+
+The postman collection can be found [here](https://documenter.getpostman.com/view/8315062/SVtTz8wH?version=latest)
