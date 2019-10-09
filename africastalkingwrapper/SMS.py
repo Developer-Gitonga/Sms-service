@@ -7,8 +7,9 @@ class SMSService(APIService):
 
 
     def send(self, message, recipients, sender_id=None, enqueue=False, callback=None):
-
+        
         for phone in recipients:
+        
             if not validate_phone(phone):
                 raise ValueError('Invalid phone number: ' + phone)
 
