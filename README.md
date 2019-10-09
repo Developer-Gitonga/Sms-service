@@ -3,6 +3,7 @@
 A messaging service that can be used to send messages to different service providers.
 
 1; Requirements
+
     ``` 
     python>=3.6
     gunicorn==19.9.0
@@ -15,10 +16,35 @@ A messaging service that can be used to send messages to different service provi
     ```
 2; SetUp
 
-    Clone the project 
+    Clone project `git clone https://github.com/pmutua/sms-service.git`
 
-    In the terminal 
-```
+    Make sure  you have already installed (virtualenv)[https://pypi.org/project/virtualenv/]
 
+    `cd` into directory then  run:
 
-```
+    `virtualenv -p python3 env`
+
+    `source env/bin/activate`
+
+    `pip install -r requirements.txt`
+
+    Then run: `gunicorn app:app`
+
+3; Making requests
+
+    Sending SMS
+
+    **Example:**
+
+    **POST** `https://sms-serv.herokuapp.com/api/send_sms/`
+
+    HEADERS   `Content-Typeapplication/json`
+
+    BODY `raw`:
+        {
+            "msg":"Text containing message",
+            "phoneNumber":["+254722212132"]
+        }
+
+    
+    The postman collection can be found [here](https://documenter.getpostman.com/view/8315062/SVtTz8wH?version=latest)
