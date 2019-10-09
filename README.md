@@ -19,7 +19,7 @@ A messaging service that can be used to send messages to different service provi
 
 Clone project `git clone https://github.com/pmutua/sms-service.git`
 
-Make sure  you have already installed (virtualenv)[https://pypi.org/project/virtualenv/]
+Make sure  you have already installed [virtualenv](https://pypi.org/project/virtualenv/)
 
 `cd` into directory then  run:
 
