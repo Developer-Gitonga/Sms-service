@@ -29,7 +29,10 @@ Make sure  you have already installed [virtualenv](https://pypi.org/project/virt
 
 Then run: `gunicorn app:app`
 
-### Making requests
+1;Postman Collection
+The postman collection can be found [here](https://documenter.getpostman.com/view/8315062/SVtTz8wH?version=latest)
+
+2;Making requests
 
 Sending SMS
 
@@ -44,5 +47,3 @@ BODY `raw`:
         "msg":"Text containing message",
         "phoneNumber":["+2547XXXXXX"]
     }
-
-The postman collection can be found [here](https://documenter.getpostman.com/view/8315062/SVtTz8wH?version=latest)
