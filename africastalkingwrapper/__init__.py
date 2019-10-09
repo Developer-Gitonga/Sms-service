@@ -1,6 +1,6 @@
 from . Authentication import AuthenticationService
 from . SMS import SMSService
-
+from . tasks import *
 
 SMS = None
 Authentication = None
