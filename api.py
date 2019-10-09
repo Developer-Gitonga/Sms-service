@@ -32,11 +32,6 @@ class API:
         return response(environ, start_response)
 
     def handle_request(self, request):
-        """ When a request comes in, we need to check its path,
-            find an appropriate handler, call that handler &
-            return an appropriate response.
-        """
-
         response = Response()
 
         handler, kwargs = self.find_handler(request_path=request.path)
