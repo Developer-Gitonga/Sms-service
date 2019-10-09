@@ -29,6 +29,8 @@ Make sure  you have already installed [virtualenv](https://pypi.org/project/virt
 
 Then run: `gunicorn app:app`
 
+### Making a Request
+
 1;Postman Collection
 The postman collection can be found [here](https://documenter.getpostman.com/view/8315062/SVtTz8wH?version=latest)
 
