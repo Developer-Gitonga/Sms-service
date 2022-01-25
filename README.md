@@ -1,6 +1,6 @@
 # Messaging Service
 
-A messaging service that can be used to send messages to different service providers.
+A messaging service that can be used to send messages to different service providers. Developed the API without using a framework inspired by the [How to write a Python web framework Blog](https://rahmonov.me/posts/write-python-framework-part-one/).
 
 1; Requirements
 
