@@ -13,15 +13,15 @@ A messaging service that can be used to send messages to different service provi
 
 ## SetUp
 
-Clone project `git clone https://github.com/pmutua/sms-service.git`
+Clone project `git clone https://github.com/Developer-Gitonga/sms-service.git`
 
 Make sure  you have already installed [virtualenv](https://pypi.org/project/virtualenv/)
 
 `cd` into directory then  run:
 
-`virtualenv -p python3 env`
+`python3 -m venv env`
 
-`source env/bin/activate`
+`source venv/bin/activate`
 
 `pip install -r requirements.txt`
 
